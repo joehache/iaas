@@ -1,0 +1,19 @@
+// Add juhache as a user
+# useradd juhache
+# passwd juhache
+# usermod -a -G wheel juhache
+# su juhache
+
+// Install git
+$ sudo dnf update -y
+$ sudo dnf install git -y
+$ git --version
+$ git config --global user.name "Joe Hache"
+$ git config --global user.email "joehache@gmail.com"
+
+// Install ansible
+$ sudo dnf makecache
+$ sudo dnf install epel-release -y
+$ sudo dnf makecache
+$ sudo dnf install ansible -y
+$ ansible --version
