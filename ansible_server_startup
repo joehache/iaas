@@ -17,3 +17,13 @@ $ sudo dnf install epel-release -y
 $ sudo dnf makecache
 $ sudo dnf install ansible -y
 $ ansible --version
+
+// Get ssh set up
+sudo vim /etc/hosts
+ssh-keygen
+ssh-copy-id host1
+
+// Get ansible set up
+cd ~
+vim inventory
+vim ansible.cfg
